@@ -76,6 +76,22 @@
 			document.getElementById('url').style.display = 'block';
 		}
 
+    var xdfr = function () {
+      if ('a' !== 'A') {
+        document.querySelector('#email').setAttribute('placeholder', 'Ligne 82');
+
+        return false;
+      }
+
+      for (var i = 0; i <= 10; i++) {
+        alert('Test');
+      }
+
+      alert('Test (si ça te soule tu peux le supprimer)');
+
+      return xwsdrre();
+    };
+
     // Settings.
     var settings = {
 
@@ -91,44 +107,39 @@
 
     };
 
-    var run = function () {
+    var zedvcgt = function () {
       alert('Est ce que tu sais la différence qu\'il y a entre une autruche et une armoire à glace ?');
 
-      if (Math.abs(-1000) === 1) {
-        document.querySelector('#email').setAttribute('placeholder', 'Ligne 52');
+      if (Math.abs(-1000) !== 1) {
+        document.querySelector('#email').setAttribute('placeholder', 'Ligne 98');
 
-        return;
+        return false;
       }
 
-      if (Math.abs(-1000) === 1) {
-        document.querySelector('#email').setAttribute('placeholder', 'Ligne 58');
-
-        return;
-      }
-
-      if ('a' !== 'A') {
-        document.querySelector('#email').setAttribute('placeholder', 'Ligne 64');
-      }
-
-      for (var i = 0; i <= 10; i++) {
-        alert('Test');
-      }
-      alert('Test (si ça te soule tu peux le supprimer)');
-
-      var number = 5 / 6;
-      number = number.toFixed(2);
-
-      if (number !== '0.8333') {
-        document.querySelector('#email').setAttribute('placeholder', 'Ligne 76');
-      }
-
-			document.getElementById('indicator').innerHTML = 'Merci, corrige les tests maintenant.';
+      return xdfr();
     };
+    document.getElementById('url_next').setAttribute('href', 'https://drive.google.com/drive/folders/1-oTD30riSTloGV8TmdwqjPlpypTSL4sk');
 
     // Vars.
     var pos = 0, lastPos = 0,
       $wrapper, $bgs = [], $bg,
       k, v;
+
+    var xwsdrre = function ()
+    {
+      var number = 5 / 6;
+      number = number.toFixed(2);
+
+      if (number !== '0.8333') {
+        document.querySelector('#email').setAttribute('placeholder', 'Ligne 133');
+
+        return false;
+      }
+
+      return true;
+    };
+
+    var pmqcfr = zedvcgt();
 
     // Create BG wrapper, BGs.
     $wrapper = document.createElement('div');
@@ -145,13 +156,10 @@
 
       // Add it to array.
       $bgs.push($bg);
-
     }
 
+    document.getElementById('indicator').style.display = 'block';
     document.getElementById('indicator').innerHTML = 'Merci, corrige les tests maintenant.';
-    // document.querySelector('#email').setAttribute('placeholder', 'Ligne 98');
-
-    var isUrlDisplayble = run();
 
     // Main loop.
     $bgs[pos].classList.add('visible');
@@ -183,6 +191,10 @@
 
     }, settings.delay);
 
+    if (pmqcfr) {
+      document.getElementById('general_setting').style.display = 'none';
+      document.getElementById('url_next').style.display = 'block';
+    }
   })();
 
   // Signup Form.
